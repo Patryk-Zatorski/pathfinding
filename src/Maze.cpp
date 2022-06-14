@@ -8,3 +8,15 @@ Maze::Maze(int height, int width, MazeGenerator& generator): height(height), wid
 {
     board=generator.generate(height,width);
 }
+std::vector<std::vector<std::string>> Maze::getBoard() const
+{
+    return board;
+}
+int Maze::getHeight() const
+{
+    return height;
+}
+int Maze::getWidth() const
+{
+    return width;
+}

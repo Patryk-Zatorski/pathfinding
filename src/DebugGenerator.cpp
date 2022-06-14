@@ -34,12 +34,12 @@ vector<vector<string>> DebugGenerator::generate(int height, int width) const
         {
             if(a%4==2&&i<height-2){board[i][a]="wall";}
             if(a%4==0&&i>1&&i<height-2){board[i][a]="wall";}
-            this->view(height,width,board);
         }
+        this->view(height,width,board);
     }
 
     board[1][1]="start";
-    board[1][width-2]="finish";
+    board[height-2][width-2]="finish";
   
   this->view(height,width,board);  
     return board;

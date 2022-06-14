@@ -11,7 +11,7 @@ class Maze {
     std::vector<std::vector<std::string>> board;
     public:
     Maze(int height, int width, MazeGenerator &generator);
-    int getHeight();
-    int getWidth();
-    std::vector<std::vector<bool>> getBoard();
+    int getHeight() const;
+    int getWidth() const;
+    std::vector<std::vector<std::string>> getBoard() const;
 };

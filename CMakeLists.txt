@@ -4,7 +4,7 @@ project(pathfinding)
 set(CMAKE_CXX_STANDARD 17)
 add_compile_options(-Wall -Wextra -pedantic)
 
-add_library(pathfinding_core src/Maze.cpp src/MazeGenerator.cpp src/DebugGenerator.cpp) 
+add_library(pathfinding_core src/Maze.cpp src/MazeGenerator.cpp src/DebugGenerator.cpp src/DepthFirstGenerator.cpp src/PathfindingAlgorithm.cpp src/SampleAlgorithm.cpp) 
 target_include_directories(pathfinding_core PUBLIC include)
 
 # Put Your .cpp files in line below
