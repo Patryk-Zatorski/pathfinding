@@ -25,8 +25,6 @@ std::unique_ptr<PathfindingAlgorithm> chooseAlgorithm(std::string userInput)
 
 int main(){
     
-    SampleAlgorithm sample;
-
     std::string userInput;
     while(userInput!="debug"&&userInput!="depth")
     {
